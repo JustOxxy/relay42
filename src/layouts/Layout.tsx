@@ -4,10 +4,10 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { Outlet } from 'react-router-dom';
 
 export const Layout: React.FC = () => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   const handleSwitchTheme = () => {
-    if (theme === 'dark') {
+    if (resolvedTheme === 'dark') {
       setTheme('light');
     } else {
       setTheme('dark');
@@ -15,7 +15,7 @@ export const Layout: React.FC = () => {
   };
 
   return (
-    <div className={`${theme === 'dark' ? '' : 'bg-slate-50'} min-h-screen`}>
+    <div className={`${resolvedTheme === 'dark' ? '' : 'bg-slate-50'} min-h-screen`}>
       <Navbar data-testid="navbar">
         <NavbarBrand className="font-bold text-black dark:text-white">
           <NavbarItem>Journey to MARS</NavbarItem>
@@ -24,7 +24,7 @@ export const Layout: React.FC = () => {
           <NavbarItem className="lg:flex">
             <Switch
               data-testid="themeSwitch"
-              isSelected={theme === 'light'}
+              isSelected={resolvedTheme === 'light'}
               size="lg"
               color="default"
               startContent={<FaSun />}

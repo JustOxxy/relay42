@@ -1,5 +1,9 @@
 # Relay42 Test Assignment
 
+### Deployment link
+
+https://relay42-production.up.railway.app/
+
 ## Installation
 
 ```sh
@@ -42,23 +46,23 @@ to ensure your application meets the expected outcomes.
 
 # Core Functionality
 
-● Develop the application using React, adhering to modern best practices
-● Ensure the application supports adding, editing, and managing mission details and crew
+⋅⋅* Develop the application using React, adhering to modern best practices
+⋅⋅* Ensure the application supports adding, editing, and managing mission details and crew
 assignments.
 
 # Data Handling
 
-● Mock the data internally within the app; external server calls are not required.
-● Utilize state management techniques suitable for complex scenarios.
+⋅⋅* Mock the data internally within the app; external server calls are not required.
+⋅⋅* Utilize state management techniques suitable for complex scenarios.
 
 # User Interface
 
-● Feel free to design your own user interface; mocks are just for reference.
-● Ensure the interface is responsive and accessible, providing an optimal experience
+⋅⋅* Feel free to design your own user interface; mocks are just for reference.
+⋅⋅* Ensure the interface is responsive and accessible, providing an optimal experience
 (web/desktop only).
 
 # Testing & Documentation
 
-● The application must be well-tested.
-● Document the project in a README file that includes setup instructions, usage guide, and
+⋅⋅* The application must be well-tested.
+⋅⋅* Document the project in a README file that includes setup instructions, usage guide, and
 a feature overview.
